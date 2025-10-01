@@ -1,38 +1,49 @@
-CUSTOMER INSIGHTS AND FRAUD PREDICTION
+💳 Customer Insights & Fraud Prediction
 
-## Overview
+📌 Project Overview
 
-This project uses **machine learning** to detect fraudulent transactions and generate insights from customer transaction data. By analyzing transaction patterns, we aim to identify high-risk transactions and understand the features driving fraud.  
+This project detects fraudulent transactions using XGBoost and PySpark. It also provides interpretable insights using feature importance and SHAP values.
 
-The core model used is **XGBoost**, and the project includes data preprocessing, model training, evaluation, and feature importance analysis.  
+The workflow includes:
 
----
+Data exploration and visualization
 
-## Features
+Model training and evaluation
 
-- **Fraud Detection**: Train a model to classify transactions as fraudulent or non-fraudulent.  
-- **Feature Importance Visualization**: Identify which features have the most impact on predictions.  
-- **Data Insights**: Explore transaction distributions and correlations.  
-- **High-Risk Transaction Flagging**: Automatically highlight transactions with a high probability of fraud.  
+Feature importance and SHAP analysis
 
----
+High-risk transaction detection
 
-## Data
+Scalable processing using PySpark
 
-The project uses a **credit card transactions dataset** with the following structure:
-
-- Features: `Time, V1–V28, Amount`  
-- Target: `Class` (0 = Non-Fraud, 1 = Fraud)  
-
-No missing values exist in the dataset, and all features are numeric.  
-
----
-
-## Installation
-
-Clone the repository and install the required packages:
-
-```bash
+🛠️ Installation
+# Clone the repository
 git clone https://github.com/JoelJoyston0705/Customer-Insights-Fraud-Prediction.git
+
+# Navigate to project folder
 cd Customer-Insights-Fraud-Prediction
+
+# Install required packages
 pip install -r requirements.txt
+
+📂 Dataset
+
+Dataset from kaggle link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+Features: V1 to V28, Time, Amount, Class
+
+Class = 1 → fraud, Class = 0 → non-fraud
+
+📌 Conclusion
+
+This project demonstrates:
+
+High-accuracy fraud detection using XGBoost
+
+Feature importance and SHAP values for interpretability
+
+High-risk transaction identification
+
+Scalable processing using PySpark
+
+💡 Business Impact: Helps financial institutions detect fraud early, reduce losses, and gain actionable insights into customer transactions.
